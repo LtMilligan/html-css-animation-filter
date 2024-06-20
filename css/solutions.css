@@ -1,0 +1,189 @@
+/* ESERCIZIO 1 */
+
+.ex-1-square:hover {
+    background-color: red;
+    transition-duration: 3s;
+}
+
+/* ESERCIZIO 2 */
+
+.ex-2-square:active {
+    width: 100%;
+    transition-duration: 3s;
+}
+
+/* ESERCIZIO 3 */
+
+.ex-3-square:hover {
+    border-radius: 50%;
+    transition-duration: 3s;
+}
+
+/* ESERCIZIO 4 */
+
+.ex-4-square:hover {
+    opacity: 0;
+    transition-duration: 3s;
+}
+
+/* ESERCIZIO 5 */
+
+.ex-5-square:hover {
+    margin: 0;
+    width: 100px;
+    height: 100px;
+    transition-duration: 3s;
+}
+
+.ex-5-square:active {
+    margin: 40px;
+    width: 20px;
+    height: 20px;
+    transition-duration: 3s;
+}
+
+/* ESERCIZIO 6 */
+
+.ex-6-img:hover {
+    filter: grayscale(100%);
+}
+
+/* ESERCIZIO 7 */
+
+.ex-7-img:hover {
+    filter: hue-rotate(180deg) invert(100%);
+    transition-duration: 3s;
+}
+
+/* ESERCIZIO 8 */
+
+.ex-8-img:hover {
+    filter: hue-rotate(180deg) invert(100%);
+    border-radius: 30px;
+    transition-duration: 3s;
+}
+
+/* ESERCIZIO 9 */
+
+.ex-9-img:hover {
+    margin: 0;
+    width: 500px;
+    filter: hue-rotate(180deg) invert(100%);
+    border-radius: 30px;
+    transition-duration: 3s;
+}
+
+/* ESERCIZIO 10 */
+
+.ex-10-icon {
+    animation-name: spin;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* ESERCIZIO 11 */
+
+.ex-11-icon:hover {
+    animation-name: hover-spin;
+    animation-duration: 3s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+}
+
+@keyframes hover-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(270deg);
+    }
+}
+
+/* ESERCIZIO 12 */
+
+.ex-12-button:active .ex-12-top-white {
+    animation-name: translate-t;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.ex-12-button:active .ex-12-bottom-white {
+    animation-name: translate-b;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes translate-t {
+    from {
+        top: -10px;
+        left: 10%;
+    }
+    to {
+        top: -10;
+        left: 50%;
+    }
+}
+
+@keyframes translate-b {
+    from {
+        bottom: -10px;
+        right: 20%;
+    }
+    to {
+        bottom: -10px;
+        right: 60%;
+    }
+}
+
+/* ESERCIZIO 13 */
+
+.ex-13-button:active .ex-13-top-white {
+    animation-name: translate-t;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.ex-13-button:active .ex-13-bottom-white {
+    animation-name: translate-b;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes translate-t {
+    0% {
+        top: -10px;
+        left: 10%;
+    }
+    25% {
+        top: -10px;
+        left: 70%;
+    }
+    50% {
+        top: -10px;
+        left: 90%;
+        transform: rotate(90deg);
+    }
+}
+
+@keyframes translate-b {
+
+}
