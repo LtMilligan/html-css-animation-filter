@@ -152,20 +152,18 @@
 
 /* ESERCIZIO 13 */
 
-.ex-13-button:active .ex-13-top-white {
+.ex-13-button:hover .ex-13-top-white {
     animation-name: translate-t;
-    animation-duration: 4s;
+    animation-duration: 2s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-    animation-direction: alternate;
 }
 
-.ex-13-button:active .ex-13-bottom-white {
+.ex-13-button:hover .ex-13-bottom-white {
     animation-name: translate-b;
-    animation-duration: 4s;
+    animation-duration: 2s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-    animation-direction: alternate;
 }
 
 @keyframes translate-t {
@@ -173,17 +171,34 @@
         top: -10px;
         left: 10%;
     }
-    25% {
-        top: -10px;
-        left: 70%;
-    }
     50% {
         top: -10px;
         left: 90%;
-        transform: rotate(90deg);
+    }
+    70% {
+        top: 54px;
+        left: 90%;
+    }
+    100% {
+        top: 54px;
+        left: 50%;
     }
 }
-
 @keyframes translate-b {
-
+    0% {
+        bottom: -10px;
+        right: 20%;
+    }
+    50% {
+        bottom: -10px;
+        right: 90%;
+    }
+    70% {
+        bottom: 54px;
+        right: 90%;
+    }
+    100% {
+        bottom: 54px;
+        right: 60%;
+    }
 }
